@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="pic1.png" alt="Website Logo" class="logo">
+        <h1>Educational Resources</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="student-info">
+            <h2>Enter Student Information</h2>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter name">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" placeholder="Enter ID">
+            <label for="studentBatch">Student Batch:</label>
+            <input type="text" id="studentBatch" placeholder="Enter Batch">
+            <label for="studentDept">Student Department:</label>
+            <input type="text" id="studentDept" placeholder="Enter Department">
+        </section>
+
+        <section class="upload-section">
+            <h2>Upload Course PDF by Subject</h2>
+            <label for="subjectSelect">Select Subject:</label>
+            <select id="subjectSelect">
+                <option value="DigitalLogicDesign">CSE-2277 - Digital Logic Design [A] (Theory)</option>
+                <option value="DigitalLogicDesignLab">CSE-2278 - Digital Logic Design Lab [A] (Lab)</option>
+                <option value="NumericalMethods">CSE-2339 - Numerical Methods [A] (Theory)</option>
+                <option value="SystemAnalysisAndDesign">CSE-2361 - System Analysis and Design [A] (Theory)</option>
+                <option value="SystemAnalysisAndDesignLab">CSE-2362 - System Analysis and Design Lab [A] (Lab)</option>
+                <option value="ComputerArchitecture">CSE-2367 - Computer Architecture [A] (Theory)</option>
+                <option value="ProjectII">ICT-3204 - Project II [A] (ProjectOrThesis)</option>
+            </select>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Upload PDF</button>
+        </section>
+
+        <section class="pdf-viewer">
+            <h2>View Uploaded PDFs by Subject</h2>
+            <div id="DigitalLogicDesign" class="subject-box">
+                <h3>CSE-2277 - Digital Logic Design [A] (Theory)</h3>
+                <ul id="DigitalLogicDesignList"></ul>
+            </div>
+            <div id="DigitalLogicDesignLab" class="subject-box">
+                <h3>CSE-2278 - Digital Logic Design Lab [A] (Lab)</h3>
+                <ul id="DigitalLogicDesignLabList"></ul>
+            </div>
+            <div id="NumericalMethods" class="subject-box">
+                <h3>CSE-2339 - Numerical Methods [A] (Theory)</h3>
+                <ul id="NumericalMethodsList"></ul>
+            </div>
+            <div id="SystemAnalysisAndDesign" class="subject-box">
+                <h3>CSE-2361 - System Analysis and Design [A] (Theory)</h3>
+                <ul id="SystemAnalysisAndDesignList"></ul>
+            </div>
+            <div id="SystemAnalysisAndDesignLab" class="subject-box">
+                <h3>CSE-2362 - System Analysis and Design Lab [A] (Lab)</h3>
+                <ul id="SystemAnalysisAndDesignLabList"></ul>
+            </div>
+            <div id="ComputerArchitecture" class="subject-box">
+                <h3>CSE-2367 - Computer Architecture [A] (Theory)</h3>
+                <ul id="ComputerArchitectureList"></ul>
+            </div>
+            <div id="ProjectII" class="subject-box">
+                <h3>ICT-3204 - Project II [A] (ProjectOrThesis)</h3>
+                <ul id="ProjectIIList"></ul>
+            </div>
+        </section>
+    </main>
+     <!-- Footer Section -->
+     <footer>
+        <p>Made by Sachin, Suborna, and Shafin - 30th Batch CSE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
